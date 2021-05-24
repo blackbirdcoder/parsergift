@@ -30,6 +30,10 @@ def picking_pre_information():
     paths_assortment = get_paths_assortment()
 
     def technical_details_about_markup(path):
+        """
+        works on page elements
+        :param path: paths where the goods
+        """
         nonlocal information
         category_title = ''
         numbers = []
