@@ -29,8 +29,6 @@ def picking_pre_information():
 
     paths_assortment = get_paths_assortment()
 
-    # print(paths_assortment)
-
     def technical_details_about_markup(path):
         nonlocal information
         category_title = ''
