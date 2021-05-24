@@ -72,6 +72,7 @@ def picking_pre_information():
             information.append({'title': category_title, 'path': path, 'number_pages': max(numbers)})
 
         create_report()
+        del soup
 
     for current_path in tqdm(paths_assortment, desc='Preliminary preparation'):
         technical_details_about_markup(current_path)
