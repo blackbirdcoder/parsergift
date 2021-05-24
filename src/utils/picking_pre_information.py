@@ -63,9 +63,9 @@ def picking_pre_information():
                     try:
                         numbers.append(int(current_element.get_text()))
                     except ValueError:
-                        numbers.append(0)
+                        numbers.append(1)
             else:
-                numbers.append(0)
+                numbers.append(1)
 
         get_numbers_pagination()
 
