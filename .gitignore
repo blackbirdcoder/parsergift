@@ -4,3 +4,5 @@ __pypackages__/
 venv/
 .venv
 .cache
+output/
+goods.xlsx

@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 from tqdm import tqdm
-from data import TARGET_URL, TARGET_PATH, MARKUP_ANALYZER  # noqa
+from data import TARGET_URL, TARGET_PATH, MARKUP_ANALYZER, PROGRESS_BAR_SETTING  # noqa
 from .get_document import get_document
 
 
@@ -78,7 +78,7 @@ def picking_pre_information():
         create_report()
         del soup
 
-    for current_path in tqdm(paths_assortment, desc='Preliminary preparation'):
+    for current_path in tqdm(paths_assortment, desc='Preliminary preparation', bar_format=PROGRESS_BAR_SETTING):
         technical_details_about_markup(current_path)
 
     return information

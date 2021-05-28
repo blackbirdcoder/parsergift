@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 from tqdm import tqdm
-from data import NAVIGATION_NAME, TARGET_URL, MARKUP_ANALYZER # noqa
+from data import NAVIGATION_NAME, TARGET_URL, MARKUP_ANALYZER, PROGRESS_BAR_SETTING # noqa
 from .get_document import get_document
 
 
@@ -11,7 +11,7 @@ def take_goods(pre_info: list):
     :return: goods from the store
     """
     content_goods = []
-    for current_item in tqdm(pre_info, desc='Retrieving goods'):
+    for current_item in tqdm(pre_info, desc='Retrieving goods', bar_format=PROGRESS_BAR_SETTING):
         path = current_item.get('path')
         number = current_item.get('number_pages')
         for current_number in range(1, number + 1):
