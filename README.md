@@ -1,6 +1,6 @@
 # Parser Gift
 
-Парсер интернет-магазина [giftpack.ru](https://giftpack.ru/)
+Парсинг интернет-магазина  [giftpack.ru](https://giftpack.ru/)
 
 ## Что решает
 
